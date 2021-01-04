@@ -1,4 +1,4 @@
-const output = fizzBuzz(90);
+const output = fizzBuzz(100);
 console.log(output);
 
 function fizzBuzz(input){
