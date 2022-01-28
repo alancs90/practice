@@ -4,7 +4,7 @@ public class RotateString {
 
     public static void main(String[] args) {
 
-//        rotateString("abcde", "eabfd");
+        rotateString("abcde", "eabfd");
         System.out.println(rotateString("abcde", "eabcd"));
     }
 
