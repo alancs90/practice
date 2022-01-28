@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         int[] nums = {2,7,11,15};
-         twoSum( nums, 9);
+         twoSum( nums, 22);
     }
 
 
@@ -19,11 +19,8 @@ public class Main {
                 if (nums[i] + nums[j] == target) {
                     ans[0] = i;
                     ans[1] = j;
-
                 }
-
             }
-
         }
         System.out.println(Arrays.toString(ans));
         return ans;
