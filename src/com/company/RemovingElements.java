@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class RemovingElements {
     public static void main(String[] args) {
-        int[] nums = {0,1,2,2,3,0,4,2};
+        int[] nums = {3,2,2,3};
         removingElement(nums, 2);
     }
 
