@@ -13,6 +13,7 @@ public class RotateArray {
         reverse(nums, 0, nums.length-1);
         reverse(nums, 0, k-1);
         int[] result = reverse(nums, k , nums.length-1);
+
         return Arrays.toString(result);
     }
 
@@ -23,8 +24,8 @@ public class RotateArray {
             nums[end] = temp;
             start++;
             end--;
-//            System.out.println(temp);
         }
+        System.out.println(Arrays.toString(nums));
         return nums;
     }
 }
