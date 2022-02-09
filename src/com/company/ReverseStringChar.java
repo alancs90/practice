@@ -1,7 +1,7 @@
 package com.company;
 
 
-public class ReverseString {
+public class ReverseStringChar {
     public static void main(String[] args) {
         char[] chars = {'H','e','l','l','o'};
         System.out.println(chars);
@@ -11,14 +11,14 @@ public class ReverseString {
     }
 
     public static void  reverseString(char[] s){
-//        method 1
+// ========= method 1
         for (int i = s.length-1; i >= 0; i--) {
             char c = s[i];
             System.out.print(c);
 
         }
 
-//        method 2
+// ========= method 2
         int left = 0;
         int right = s.length-1;
 
