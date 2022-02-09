@@ -14,8 +14,7 @@ public class sortAlpha {
 
         Arrays.sort(chars);
         System.out.println(Arrays.toString(chars));
-//        String str1 = new String(chars);
-//        return str1;
+
         String result = "";
         for (char letter: chars){
             result += letter;
