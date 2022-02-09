@@ -3,12 +3,12 @@ package com.company;
 public class ReverseStringStr {
     public static void main(String[] args) {
         String str = "Hello World!!!";
-        System.out.println(reverseStringStringBuiler(str));
+        System.out.println(reverseStringStringBuilder(str));
         System.out.println(reverseStringManually(str));
         System.out.println(reverseString(str));
     }
 
-    public static String reverseStringStringBuiler(String str){
+    public static String reverseStringStringBuilder(String str){
         StringBuilder sb = new StringBuilder(str);
         return sb.reverse().toString();
     }

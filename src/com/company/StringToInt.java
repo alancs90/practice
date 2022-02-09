@@ -2,8 +2,8 @@ package com.company;
 
 public class StringToInt {
     public static void main(String[] args) {
-        stringToInt("12345");
-        System.out.println();
+
+        System.out.println(stringToInt("12345"));
     }
 
     public static int stringToInt(String str){
