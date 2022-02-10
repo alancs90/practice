@@ -1,6 +1,8 @@
 package com.company;
 
 
+import java.util.Arrays;
+
 public class ReverseStringChar {
     public static void main(String[] args) {
         char[] chars = {'H','e','l','l','o'};
@@ -10,14 +12,16 @@ public class ReverseStringChar {
         System.out.println(chars);
     }
 
-    public static void  reverseString(char[] s){
+    public static char[]  reverseString(char[] s){
 // ========= method 1
+        char[] result = new char[s.length];
+        int index = 0;
         for (int i = s.length-1; i >= 0; i--) {
             char c = s[i];
-            System.out.print(c);
-
+            result[index++] = s[i];
         }
-
+        System.out.println(Arrays.toString(result));
+        System.out.println(new String(result));
 // ========= method 2
         int left = 0;
         int right = s.length-1;
@@ -30,5 +34,6 @@ public class ReverseStringChar {
             left++;
             right--;
         }
+        return result;
     }
 }
