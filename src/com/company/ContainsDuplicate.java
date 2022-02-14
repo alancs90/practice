@@ -11,9 +11,11 @@ public class ContainsDuplicate {
     public static List<Integer> containDuplicate(int[] nums){
         Set<Integer> set = new HashSet<>();
         List<Integer> list = new ArrayList<>() ;
-    Map<Integer, Integer> map = new HashMap<>();
+        list.subList(0,list.size());
+//    Map<Integer, Integer> map = new HashMap<>();
 //    map.containsKey()
-    list.set(0, list.get(0)+2);
+
+//    list.set(0, list.get(0)+2);
 
         List <Integer> setList = null;
         for (int i = 0; i < nums.length; i++) {

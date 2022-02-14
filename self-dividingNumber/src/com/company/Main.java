@@ -8,18 +8,15 @@ public class Main {
         // write your code here
         isSelfDivingNumber(128);
     }
-
     public static boolean isSelfDivingNumber(int num) {
 
         String number = num + "";
-
         for (int i = 0; i < number.length(); i++) {
             int digit = Character.getNumericValue(number.charAt(i));
             if (digit == 0 || num % digit != 0) {
                 System.out.println("No! " + num + " Is Not Self-Diving NUmber");
                 return false;
             }
-
         }
         System.out.println("Yes! " + num + " Is Self-Diving Number");
         return true;
