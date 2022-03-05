@@ -7,14 +7,24 @@ public class ReverseInt {
     }
 
     public static int reverseInt(int x){
-        int revInt = 0;
-        while (x != 0){
-            int lastDigit = x % 10;
-            x = x/10;
-            revInt = revInt * 10 + lastDigit;
-            System.out.println(revInt);
+        String str = String.valueOf(x);
+        String revStr = "";
+        for (int i = str.length()-1; i >= 0; i-- ){
+            revStr = revStr + str.charAt(i);
         }
-//        System.out.println(revInt);
-        return revInt;
+        int ans = Integer.parseInt(revStr);
+        System.out.println(ans);
+        return ans;
+
+
+//        int revInt = 0;
+//        while (x != 0){
+//            int lastDigit = x % 10;
+//            x = x/10;
+//            revInt = revInt * 10 + lastDigit;
+//            System.out.println(revInt);
+//        }
+////        System.out.println(revInt);
+//        return revInt;
     }
 }

@@ -8,12 +8,13 @@ public class StringToInt {
 
     public static int stringToInt(String str){
         int num = 0;
-//        for (char c : str.toCharArray()){
-////            num = Integer.parseInt(str);
-//            num =  Character.getNumericValue(c);
-//
-//        }
-        num = Integer.parseInt(str);
+        String ans = "";
+        for (char c : str.toCharArray()){
+            num =  Character.getNumericValue(c);
+            ans = ans + c;
+        }
+        System.out.println(ans);
+//        num = Integer.parseInt(str);
 
 //        System.out.println(num + 2);
 //        System.out.println(str +2);
