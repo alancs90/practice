@@ -15,20 +15,24 @@ public class sortAlpha {
         Arrays.sort(chars);
         System.out.println(Arrays.toString(chars));
 
-        String result = "";
+        String ans = new String(chars);
+        System.out.println(ans);
+
+        String resultEnhanceForLoop = "", resultForLoop = "", resultWhileLoop = "";
+
         for (char letter: chars){
-            result += letter;
+            resultEnhanceForLoop += letter;
         }
         for (int i = 0; i < chars.length; i++){
-                result += chars[i] ;
+            resultForLoop += chars[i] ;
         }
         int i = 0;
         while ( i < chars.length){
-            result += chars[i] ;
+            resultWhileLoop += chars[i] ;
             i++;
         }
-        System.out.println(result);
-        return result;
+        System.out.println(resultEnhanceForLoop +" "+ resultForLoop +" "+ resultWhileLoop);
+        return resultEnhanceForLoop;
     }
 
 }

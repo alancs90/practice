@@ -6,11 +6,13 @@ public class ReverseStringStr {
         System.out.println(reverseStringStringBuilder(str));
         System.out.println(reverseStringManually(str));
         System.out.println(reverseString(str));
+//        str.toCharArray()
     }
 
     public static String reverseStringStringBuilder(String str){
         StringBuilder sb = new StringBuilder(str);
         return sb.reverse().toString();
+
     }
 
     public static String reverseStringManually(String str){

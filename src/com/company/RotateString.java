@@ -12,6 +12,7 @@ public class RotateString {
 
         return s.length() == goal.length() && (s + s).contains(goal);
 
+
     }
 
 }
