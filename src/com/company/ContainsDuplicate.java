@@ -6,7 +6,8 @@ public class ContainsDuplicate {
     public static void main(String[] args) {
         int[] input = {1,2,3,1,1,1,2};
         System.out.println(containDuplicate(input));
-
+int num = 0;
+String nums = new String(String.valueOf(num));
 
     }
 
@@ -14,6 +15,7 @@ public class ContainsDuplicate {
         Set<Integer> set = new HashSet<>();
         List<Integer> list = new ArrayList<>() ;
         list.subList(0,list.size());
+
     Map<Integer, Integer> map = new HashMap<>();
 //    map.containsKey()
         String str = "string";

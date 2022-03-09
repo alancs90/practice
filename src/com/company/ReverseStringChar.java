@@ -17,7 +17,7 @@ public class ReverseStringChar {
         char[] result = new char[s.length];
         int index = 0;
         for (int i = s.length-1; i >= 0; i--) {
-            char c = s[i];
+//            char c = s[i];
             result[index++] = s[i];
         }
         System.out.println(Arrays.toString(result));
