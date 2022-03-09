@@ -15,7 +15,7 @@ public class CheckPerfectNumber {
             }
         }
         sum++;
-        
+        System.out.println(sum);
         return sum == num;
     }
 }
